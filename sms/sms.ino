@@ -1,8 +1,7 @@
-
-char phone_no[]="995577260027";
+char phone_no[]="577260027";
 
 void setup() {
-Serial.begin(9600);
+Serial.begin(115200);
 delay(300); 
 
 Serial.println("AT+CMGF=1");    
@@ -13,7 +12,7 @@ Serial.write(0x22);
 Serial.write(0x0D);  // hex equivalent of Carraige return    
 Serial.write(0x0A);  // hex equivalent of newline
 delay(2000);
-Serial.print("GSM A6 test message!");
+Serial.print("arduino test!");
 delay(500);
 Serial.println (char(26));//the ASCII code of the ctrl+z is 26
 
@@ -23,4 +22,5 @@ void loop()
 {
 
 }
+
 
